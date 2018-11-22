@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/ic_expenses"
+            android:title="Expenses" />
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@drawable/ic_goals"
+            android:title="Savings and Goals" />
+        <item
+            android:id="@+id/nav_report1"
+            android:icon="@drawable/ic_report"
+            android:title="Daily Expense Report" />
+		<item
+            android:id="@+id/nav_report2"
+            android:icon="@drawable/ic_report"
+            android:title="Category-wise Expense Report" />
+    </group>
+</menu>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/idFragmentExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/txtOverview"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="43dp"
+            android:text="@string/txtTotalExpenses"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRemainingBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtTotalExpenses"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="134dp"
+            android:text="@string/txtRemainingBalance"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalAvailBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtTotalExpenses"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="87dp"
+            android:text="@string/txtTotalAvailBalance"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalExpenseAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtTotalExpenses"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTotalAvailBalanceAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtTotalAvailBalance"
+            android:layout_alignStart="@+id/txtTotalExpenseAmt"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="0dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="386dp"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="170dp"
+            android:background="#2f4f4f" />
+
+        <TextView
+            android:id="@+id/txtRemainingBalanceAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRemainingBalance"
+            android:layout_alignStart="@+id/txtTotalExpenseAmt"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="0dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtCurrentMonthSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="181dp"
+            android:text="@string/txtCurrentMonthSummary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtTotalExpenses"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="233dp"
+            android:text="@string/txtCategory"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="263dp"
+            android:layout_marginStart="263dp"
+            android:layout_marginTop="233dp"
+            android:text="@string/txtAmount"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtClothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtTotalAvailBalance"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="311dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/txtClothing" />
+
+        <TextView
+            android:id="@+id/txtTransportation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="132dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp"
+            android:text="@string/txtTransportation" />
+
+        <TextView
+            android:id="@+id/txtEntertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="280dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:text="@string/txtEntertainment"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothing"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="248dp"
+            android:text="@string/txtFood" />
+
+        <TextView
+            android:id="@+id/txtGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="219dp"
+            android:layout_marginLeft="126dp"
+            android:layout_marginStart="126dp"
+            android:text="@string/txtGas" />
+
+        <TextView
+            android:id="@+id/txtGrocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothing"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="190dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/txtGrocery" />
+
+        <TextView
+            android:id="@+id/txtInsurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="160dp"
+            android:layout_marginLeft="89dp"
+            android:layout_marginStart="89dp"
+            android:text="@string/txtInsurance" />
+
+        <TextView
+            android:id="@+id/txtUtilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="104dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginStart="103dp"
+            android:text="@string/txtUtilities" />
+
+        <TextView
+            android:id="@+id/txtClothingAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:layout_marginTop="274dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtEntertainmentAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtEntertainment"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtFoodAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtAmount"
+            android:layout_alignTop="@+id/txtFood"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtGasAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtGas"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtGroceryAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtGrocery"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtInsuranceAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtInsurance"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtTranspoAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtTransportation"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtUtilAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtClothingAmt"
+            android:layout_alignTop="@+id/txtUtilities"
+            android:text="TextView" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fabMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:fab_addButtonColorNormal="@color/pink_pressed"
+            app:fab_addButtonColorPressed="@color/pink_pressed"
+            app:fab_addButtonPlusIconColor="@color/white"
+            app:fab_labelStyle="@style/custom_fab">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/white_pressed"
+                app:fab_icon="@drawable/ic_attach_money_black_24dp"
+                app:fab_size="mini"
+                app:fab_title="Add Expense" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</ScrollView>

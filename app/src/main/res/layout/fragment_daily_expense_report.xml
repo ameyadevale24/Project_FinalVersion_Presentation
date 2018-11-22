@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barReport"
+        android:layout_width="match_parent"
+        android:layout_height="480sp">
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <Button
+        android:id="@+id/btnGenerateReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginLeft="296dp"
+        android:layout_marginBottom="7dp"
+        android:text="Show" />
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/months" />
+
+    <Spinner
+        android:id="@+id/spnYear"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGenerateReport"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="-34dp"
+        android:entries="@array/years" />
+
+</RelativeLayout>
